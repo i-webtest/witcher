@@ -1,0 +1,27 @@
+.navigation
+  &__list
+    display: flex
+    gap: 25px
+  &__link
+    display: block
+    background-color: rgba(255, 255, 255, 0.7)
+    background-position: center
+    background-repeat: no-repeat
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    border: 1px solid transparent
+    outline: 0
+    transition: all 0.3s ease-in-out
+    &:focus
+      background-color: #FFFFFF
+      border-color: #5B5B5B
+    &:active, &:hover
+      background-color: #FFFFFF
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7)
+    &_netflix
+      background-image: url("../img/netflix.svg")
+    &_okko
+      background-image: url("../img/okko.svg")
+    &_kinopoisk
+      background-image: url("../img/kinopoisk.svg")
