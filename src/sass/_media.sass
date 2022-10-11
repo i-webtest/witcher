@@ -1,0 +1,175 @@
+@media (max-width: 1200px)
+  .container
+    // width: 960px
+@media (max-width: 992px)
+  body
+    font-size: 16px
+  .page
+    &::before
+      right: 0
+      height: calc( 100% - 90px )
+  .container
+    // width: 100%
+  .present
+    padding: 25px 0 58px
+    &__title
+      font-size: 70px
+      margin-bottom: 9px
+    &__tagline
+      max-width: 290px
+      margin-bottom: 28px
+    &__btn
+      width: 246px
+      height: 59px
+    &__hero
+      margin-bottom: 10px
+  .tabs
+    &__control
+      font-size: 16px
+      padding: 16px 38px
+      margin-bottom: 10px
+  .card
+    &__photo-img
+      height: 180px
+    &_img
+      flex-basis: 210px
+  .product
+    &__title
+      font-size: 16px
+@media (max-width: 768px)
+  .page
+    &::before
+      top: 109px
+      bottom: auto
+      height: 448px
+  .container
+    padding: 0 39px
+  .header
+    &__container
+      grid-template-columns: 93px 1fr 170px
+  .present
+    padding: 58px 0 55px
+    &__hero
+      margin-bottom: 30px
+    &__title
+      font-size: 60px
+      margin-bottom: 8px
+  .tabs
+    &__control
+      padding: 16px 46px
+      margin-bottom: 16px
+    &__content
+      &_video
+        flex-wrap: wrap
+        row-gap: 50px
+        // justify-content: center
+      &_picture
+        flex-wrap: wrap
+        row-gap: 30px
+        justify-content: center
+      &_product
+        flex-wrap: wrap
+        row-gap: 35px
+        // justify-content: center
+  .card
+    &_video, &_img, &_product
+      flex-basis: 47%
+    &__video-wrapper
+      height: 180px
+    &__photo-img
+      height: 270px
+  .product
+    &__img
+      height: 180px
+@media (max-width: 576px)
+  .container
+    width: 100%
+    padding: 0 15px
+  .header
+    &__container
+      grid-template-columns: 60px 1fr 60px
+  .navigation
+    position: relative
+    &__list
+      display: none
+      &_active
+        display: flex
+        flex-direction: column
+        position: absolute
+        top: 35px
+        right: 0
+        gap: 10px
+    &__link
+      display: block
+      width: 32px
+      height: 32px
+    &__btn
+      display: block
+  .present
+    &__title
+      font-size: 50px
+    &__tagline
+      font-size: 14px
+      max-width: 230px
+    &__btn
+      width: 290px
+      height: 69px
+  .tabs
+    &__control
+      max-width: 220px
+      font-size: 14px
+      padding: 10px 30px
+      margin-left: auto
+      margin-right: auto
+    &__content
+      &_video
+        justify-content: center
+        row-gap: 40px
+      &_product
+        justify-content: center
+        row-gap: 30px
+  .card
+    flex-basis: 290px
+    &__video-wrapper
+      height: 148px
+    &__photo-img
+      height: 230px
+  .product
+    &__img
+      height: 148px
+@media (max-width: 480px)
+  .page
+    &::before
+      top: 49px
+      height: 258px
+  .header
+    &__container
+      grid-template-columns: 45px 1fr 45px
+    &__announcement
+      font-size: 14px
+  .present
+    &__title
+      font-size: 40px
+      margin-bottom: 6px
+    &__tagline
+      font-size: 12px
+      max-width: 190px
+      margin-bottom: 23px
+  .tabs
+    &__control
+      margin-bottom: 10px
+@media (max-width: 320px)
+  .header
+    padding-top: 15px
+  .present
+    padding: 92px 0 39px
+  .tabs
+    &__control
+      font-size: 12px
+  .card
+    &__photo
+      &-img
+        height: 230px
+  .product
+    &__img
+      height: 148px

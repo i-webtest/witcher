@@ -9,6 +9,7 @@
     line-height: 120%
     margin-bottom: 8px
   &__tagline
+    max-width: 350px
     line-height: 130%
     margin-bottom: 54px
   &__btn
@@ -20,10 +21,24 @@
     filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51))
     border-radius: 2px
     outline: none
-    transition: background-image .3s ease-in
+    transition: filter .3s ease-in
     &:hover
-      background-image: url("../img/button-hover.png")
+      filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51)) brightness(1.21)
     &:active
-      background-image: url("../img/button-active.png")
+      filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51)) brightness(1.2)
     &:focus
-      background-image: url("../img/button-focus.png")
+      filter: drop-shadow(-4px 6px 10px rgba(10, 10, 10, 0.51)) brightness(1.1)
+.page
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    right: 96px
+    bottom: 0
+    width: 100%
+    height: calc( 100% - 115px )
+    background-image: url("../img/gerald.png")
+    background-repeat: no-repeat
+    background-position: right bottom
+    background-size: contain
+    z-index: -1
